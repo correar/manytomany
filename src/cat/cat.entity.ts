@@ -17,7 +17,7 @@ name: string;
 @ManyToMany(type => Cloth, { cascade: true })
 @JoinTable({
     name: 'cat_use_cloth',
-    joinColumn: { name: 'cat_id', referencedColumnName: 'id '},
+    joinColumn: { name: 'cat_id', referencedColumnName: 'id'},
     inverseJoinColumn: { name: 'cloth_id', referencedColumnName: 'id'},
 })
 cloths: Cloth[];
